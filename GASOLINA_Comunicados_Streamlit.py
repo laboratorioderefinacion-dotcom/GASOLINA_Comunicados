@@ -364,13 +364,6 @@ nombre_archivo_nuevo = sanitizar_nombre_archivo(
     nombre_archivo_nuevo
 )
 
-# Notas de agua ordenadas
-notas_ordenadas = []
-for prefijo in ["(*)", "(**)"]:
-    for nota in sorted(notas_agua):
-        if nota.startswith(prefijo):
-            notas_ordenadas.append(nota)
-
 # Datos para merge
 datos_fusion = {
     "num_com": numero_comunicado,
